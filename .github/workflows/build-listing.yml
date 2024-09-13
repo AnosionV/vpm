@@ -1,6 +1,8 @@
 name: Build Repo Listing
 
 on: 
+  repository_dispatch:
+    types: [update-vpm-page]
   workflow_dispatch:
   push:
     branches: main
