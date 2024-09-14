@@ -11,9 +11,9 @@
 
 ## 🌐 使い方
 
-このパッケージリストをVPMに追加するには、以下のリンクからVPMのリポジトリリストに追加してください。
+このパッケージリストをVPMに追加するには、以下のリンクからVPMページにアクセスし、 `Add to VCC`` ボタンをクリックしてください。
 
-**[Add To VCC](vcc://vpm/addRepo?url=https://AnosionV.github.io/vpm/index.json)**
+**[Anosion VPM](https://anosionv.github.io/vpm/)**
 
 追加後、VPMを通じてこのリストに含まれるパッケージを直接インストール・管理できます。
 
