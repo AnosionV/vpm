@@ -1,6 +1,6 @@
 # Anosion VPM - VRChatパッケージリスト
 
-Anosion VPMは、VRChatの開発者やユーザー向けのVPM対応パッケージリストです。このリポジトリは、VRChatのアバターカスタマイズや開発を強化・簡素化するためのパッケージを集めたもので、VRChat Package Manager（VPM）を通じて簡単にアクセス・更新ができます。
+**[Anosion VPM](https://anosionv.github.io/vpm/)** は、VRChatの開発者やユーザー向けのVPM対応パッケージリストです。このリポジトリは、VRChatのアバターカスタマイズや開発を強化・簡素化するためのパッケージを集めたもので、VRChat Package Manager（VPM）を通じて簡単にアクセス・更新ができます。
 
 ## 📦 現在利用可能なパッケージ
 
@@ -11,11 +11,9 @@ Anosion VPMは、VRChatの開発者やユーザー向けのVPM対応パッケー
 
 ## 🌐 使い方
 
-このパッケージリストをVPMに追加するには、以下のURLをVPMのリポジトリリストに追加してください。
+このパッケージリストをVPMに追加するには、以下のリンクからVPMのリポジトリリストに追加してください。
 
-```url
-https://AnosionV.github.io/vpm/index.json
-```
+**[Add To VCC](https://AnosionV.github.io/vpm/index.json)**
 
 追加後、VPMを通じてこのリストに含まれるパッケージを直接インストール・管理できます。
 
