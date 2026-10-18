@@ -33,6 +33,8 @@
         {{~ end; ~}}
       </div>
     </div>
+    <section class="package-section col align-items-center" aria-labelledby="packagesHeading">
+    <h2 class="section-heading" id="packagesHeading">VPM Packages</h2>
     <div class="addToVccBlock mt-4 row align-items-center">
       <fluent-text-field aria-readonly="true" id="vccUrlField" class="vccUrlField" readonly value="{{ listingInfo.Url }}">
       </fluent-text-field>
@@ -209,6 +211,25 @@
         {{~ end ~}}
       </fluent-data-grid>
     </fluent-card>
+    </section>
+    <section class="apps-section" aria-labelledby="appsHeading">
+      <h2 class="section-heading" id="appsHeading">Apps</h2>
+      <fluent-card class="app-card" role="article" aria-labelledby="radialKeyboardHeading" lang="ja">
+        <img class="app-preview" src="images/vr-radial-keyboard.png" width="1520" height="760" loading="lazy" alt="VR Radial Keyboardの左右ホイール型入力UI">
+        <div class="app-details">
+          <h3 id="radialKeyboardHeading">VR Radial Keyboard</h3>
+          <ul class="app-platforms" aria-label="動作環境">
+            <li>Windows</li>
+            <li>SteamVR</li>
+          </ul>
+          <p>左右コントローラーのスティックで文字を選び、フォーカス中のウィンドウへ入力するSteamVR用オーバーレイキーボードです。日本語IMEにも対応しています。</p>
+          <div class="app-actions">
+            <fluent-anchor appearance="accent" href="https://github.com/AnosionV/VR-Radial-Keyboard/releases/latest">ダウンロード</fluent-anchor>
+            <fluent-anchor href="https://github.com/AnosionV/VR-Radial-Keyboard">GitHub</fluent-anchor>
+          </div>
+        </div>
+      </fluent-card>
+    </section>
     {{~ if listingInfo.InfoLink.Url ~}}
       <div class="caption1" id="publishedByText">
         <a href="{{listingInfo.InfoLink.Url}}" target="_blank">{{ if listingInfo.InfoLink.Text; listingInfo.InfoLink.Text; else; "Lean More"; end; }}</a>

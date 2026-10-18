@@ -36,6 +36,104 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.package-section,
+.apps-section {
+  width: 90%;
+  min-width: 0;
+}
+
+.section-heading {
+  width: 100%;
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.package-section > .addToVccBlock {
+  width: 100%;
+  margin-top: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.package-section > .addToVccBlock > .ms-2 {
+  margin-left: 0;
+}
+
+.package-section > .addToVccBlock > .vccUrlField {
+  min-width: 0;
+  max-width: 100%;
+  flex: 1 1 280px;
+}
+
+.package-section > .searchBlock,
+.package-section > .packages {
+  width: 100%;
+  max-width: 100%;
+}
+
+.apps-section {
+  margin-top: 2rem;
+}
+
+.app-card {
+  display: block;
+  overflow: hidden;
+}
+
+.app-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.app-details {
+  padding: 1.5rem;
+}
+
+.app-details h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.app-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-platforms li {
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--neutral-stroke-rest);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.app-details p {
+  margin: 1rem 0 1.25rem;
+  line-height: 1.8;
+}
+
+.app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .package-section #packageGrid fluent-data-grid-row {
+    min-width: 650px;
+  }
+
+  .app-details {
+    padding: 1rem;
+  }
 }
 
 .align-items-center {
