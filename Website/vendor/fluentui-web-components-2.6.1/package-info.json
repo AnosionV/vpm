@@ -1,0 +1,14 @@
+{
+  "name": "@fluentui/web-components",
+  "version": "2.6.1",
+  "tarball": "https://registry.npmjs.org/@fluentui/web-components/-/web-components-2.6.1.tgz",
+  "tarballIntegrity": "sha512-coyV+QZBVqcrJbncR2iyL0ZMXGFRJmP+JYUlewkYBt8bgmTMIwKBdUX0cN9S6KUp8JHoC2OSRqL8MYgT3T+YLQ==",
+  "sourceCommit": "b6e9fdefdfe32bd6e23c1ea0d854c5977b730ed8",
+  "bundle": "dist/web-components.min.js",
+  "bundleSHA256": "fbe64c17af75e6020d5cf21e603c0364f9665fa0656b5bda397031f5eb9ab127",
+  "licenses": [
+    "LICENSE.txt",
+    "FAST-LICENSE.txt",
+    "tabbable-LICENSE.txt"
+  ]
+}
