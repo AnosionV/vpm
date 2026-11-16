@@ -8,6 +8,8 @@
 
 - **[Material Replacer](https://github.com/AnosionV/MaterialReplacer)**  
   Unity内のHierarchyでGameObjectに適用されているマテリアルを検索して置き換えることができる、カスタムエディター拡張機能です。
+- **[Matcap Generator](https://github.com/AnosionV/MatcapGenerator)**  
+  画像編集ソフトを使わずに、Unity の Inspector 上でパラメータを調整しながら Matcap 用のテクスチャを作成できるエディタ拡張です。
 
 ## 🌐 使い方
 
