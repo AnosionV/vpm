@@ -183,6 +183,17 @@ h1 {
   margin: 0.25rem 0;
 }
 
+#packageGrid fluent-data-grid-cell .col {
+  min-width: 0;
+  white-space: normal;
+}
+
+#packageGrid .caption1 {
+  line-height: 1.5;
+  margin: 0.25rem 0;
+  overflow-wrap: anywhere;
+}
+
 .searchBlock {
   margin-top: 1rem;
   width: 100%;
