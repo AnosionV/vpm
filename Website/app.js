@@ -29,6 +29,11 @@ const PACKAGES = {
 {{~ end ~}}
 };
 
+const PACKAGE_DESCRIPTIONS_JA = {
+  "jp.anosion.material-replacer": "Hierarchy 内の GameObject に適用されているマテリアルを検索して置換できる Unity エディタ拡張です。",
+  "jp.anosion.matcap-generator": "画像編集ソフトを使わずに、Unity の Inspector 上で Matcap テクスチャを作成・リアルタイム調整し、lilToon 等への設定や PNG 書き出しができるエディタ拡張です。",
+};
+
 const setTheme = () => {
   const isDarkTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (isDarkTheme()) {
@@ -46,6 +51,15 @@ const setTheme = () => {
   });
 
   const packageGrid = document.getElementById('packageGrid');
+
+  packageGrid.querySelectorAll('fluent-data-grid-row[data-package-id]').forEach(row => {
+    const jaDescription = PACKAGE_DESCRIPTIONS_JA[row.dataset.packageId];
+    const descriptionEl = row.querySelector('.caption1');
+    if (jaDescription && descriptionEl) {
+      descriptionEl.textContent = jaDescription;
+      descriptionEl.lang = 'ja';
+    }
+  });
 
   const searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('input', ({ target: { value = '' }}) => {
@@ -171,7 +185,9 @@ const setTheme = () => {
       packageInfoName.textContent = packageInfo.displayName;
       packageInfoId.textContent = packageId;
       packageInfoVersion.textContent = `v${packageInfo.version}`;
-      packageInfoDescription.textContent = packageInfo.description;
+      const jaDescription = PACKAGE_DESCRIPTIONS_JA[packageId];
+      packageInfoDescription.textContent = jaDescription ?? packageInfo.description;
+      packageInfoDescription.lang = jaDescription ? 'ja' : '';
       packageInfoAuthor.textContent = packageInfo.author.name;
       packageInfoAuthor.href = packageInfo.author.url;
 
