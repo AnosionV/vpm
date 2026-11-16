@@ -31,7 +31,7 @@ const PACKAGES = {
 
 const PACKAGE_DESCRIPTIONS_JA = {
   "jp.anosion.material-replacer": "Hierarchy 内の GameObject に適用されているマテリアルを検索して置換できる Unity エディタ拡張です。",
-  "jp.anosion.matcap-generator": "画像編集ソフトを使わずに、Unity の Inspector 上で Matcap テクスチャを作成・リアルタイム調整し、マテリアルのテクスチャスロットへの直接割り当てや PNG 書き出しができるエディタ拡張です。",
+  "jp.anosion.matcap-generator": "Unity の Inspector 上で Matcap テクスチャを作成・リアルタイム調整し、マテリアルのテクスチャスロットへの直接割り当てや PNG 書き出しができるエディタ拡張です。",
 };
 
 const setTheme = () => {
